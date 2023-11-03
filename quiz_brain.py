@@ -20,4 +20,11 @@ class QuizBrain:
         print(f"The correct answer was: {correct_answer}.")
         print(f"Your current score is: {self.score}/{self.question_number}.")
         print("\n")
+
+    def getScore(self):
+        """
+        Returns a tuple in which the first element is the current score and the second element is the 
+        amout of questions in this quiz.
+        """
+        return (self.score, len(self.question_list))
         
